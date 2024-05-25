@@ -1,0 +1,25 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+fieldset {
+    margin: 20px;
+    text-align: center;
+    legend {
+        font-weight: bold;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    align-items: center;
+    div {
+        img {
+            width: 400px;
+            height: 400px;
+        }
+    }
+}

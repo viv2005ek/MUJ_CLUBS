@@ -1,0 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+fieldset {
+  margin: 20px;
+  text-align: center;
+}
+fieldset legend {
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content div img {
+  width: 400px;
+  height: 400px;
+}
