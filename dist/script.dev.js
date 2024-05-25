@@ -1,5 +1,15 @@
 "use strict";
 
+//loader remove
+var forLoaderBody = document.body.querySelector(".forLoaderBody");
+var containerLoader = document.body.querySelector(".containerLoader");
+window.addEventListener("load", function (e) {
+  setTimeout(function () {
+    containerLoader.style.display = "none";
+    forLoaderBody.classList.remove("forLoaderBody");
+  }, 3000); //3 second delay
+}); //typing effect
+
 var typed = document.querySelector(".typed");
 
 if (typed) {

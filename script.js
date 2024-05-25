@@ -1,3 +1,18 @@
+//loader remove
+
+
+const forLoaderBody = document.body.querySelector(".forLoaderBody");
+const containerLoader = document.body.querySelector(".containerLoader");
+
+window.addEventListener("load", (e) => {
+    setTimeout(() => {
+        containerLoader.style.display = "none";
+        forLoaderBody.classList.remove("forLoaderBody");
+    }, 3000); //3 second delay
+})
+
+
+//typing effect
 const typed = document.querySelector(".typed");
 if (typed) {
     let typed_strings = typed.getAttribute("data-typed-items");
