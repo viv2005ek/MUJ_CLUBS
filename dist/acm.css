@@ -20,3 +20,16 @@ fieldset legend {
   width: 400px;
   height: 400px;
 }
+
+@media screen and (max-width: 800px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .content div img {
+    width: 400px;
+    height: 400px;
+  }
+}
