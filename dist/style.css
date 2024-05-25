@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+#wave {
+  z-index: -1;
+}
+
+header {
+  width: 100vw;
+  position: absolute;
+  top: 3vh;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+header h1 {
+  background-image: url(../images/muj.png);
+  background-size: contain;
+  background-clip: text;
+  color: transparent;
+  z-index: 100;
+  text-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5);
+}
+header h1::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: calc(50% - 190px);
+  text-align: center;
+  background: radial-gradient(#474747, transparent, black);
+  width: 380px;
+  height: 4px;
+  transform: scale(0);
+  border: 1px sloid black;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+header h1:hover::after {
+  transform: scale(1);
+  box-shadow: 0 0 10px 1px #00ff51;
+}
+
+.clubs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, auto)); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin: 20px;
+}
+
+.outerDiv {
+  width: 28%;
+  min-width: 300px;
+}
+
+.outerDiv:not(h1) {
+  cursor: pointer;
+}
+
+.cardAuto {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  border: 4px solid white;
+  border-radius: 10px;
+  overflow-x: hidden;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.cardAuto > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.cardAuto img {
+  animation: slide 20s infinite;
+}
