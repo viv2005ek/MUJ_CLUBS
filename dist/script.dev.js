@@ -18,7 +18,7 @@ if (typed) {
   if (typed_strings) {
     var onTick = function onTick() {
       typed_string = current_strings.substring(0, count);
-      typed.innerHTML = typed_string;
+      typed.innerHTML = typed_string + "|";
       count++;
 
       if (count > current_string_length) {
