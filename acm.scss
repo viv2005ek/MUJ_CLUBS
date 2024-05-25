@@ -38,3 +38,46 @@ fieldset {
         }
     }
 }
+
+#chapters {
+    display: flex;
+    flex-direction: column;
+    a {
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 20px;
+        color: #aef2f5;
+        margin: 10px;
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+#mode {
+    padding: 10px;
+    border-radius: 13px;
+    font-size: 20px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
+
+button:hover {
+    background-color: gray;
+    color: whitesmoke;
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+button:focus {
+    background-color: #969695;
+    color: whitesmoke;
+    transform: scale(1.04);
+}
+
+button:active {
+    background-color: #5c5c5b;
+    color: white;
+    transform: scale(0.9);
+}
