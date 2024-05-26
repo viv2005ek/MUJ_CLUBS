@@ -88,3 +88,6 @@ button:active {
 #FAQs details {
   margin: 10px;
 }
+#FAQs details :hover{
+  cursor:pointer;
+}
